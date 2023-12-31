@@ -1,0 +1,325 @@
+@charset "UTF-8";
+@import url("html5reset-1.6.1.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+/*--------------------テンプレート情報--------------------*/
+/*template　Maison de R*/
+/*url　https://maisonder.web.fc2.com/*/
+/*title　LUNA*/
+/*code　CSS3*/
+
+/*--------------------ライセンス--------------------*/
+
+/*HTML5 Reset Stylesheet
+html5doctor.com Reset Stylesheet v1.6.1
+http://html5doctor.com/html-5-reset-stylesheet/
+Copyright Richard Clark - http://richclarkdesign.com
+Released under the CC0 Public Domain Dedication and MIT License
+http://opensource.org/licenses/mit-license.php
+*/
+
+/*
+jQuery v3.3.1
+http://jquery.com/
+(c) JS Foundation and other contributors
+Released under the MIT license
+http://jquery.org/license
+http://opensource.org/licenses/mit-license.php
+*/
+
+/*
+jQuery Smooth scroll
+Handy Web Design
+https://handywebdesign.net/2017/10/jquery-smooth-scroll/
+*/
+
+/*
+Google Fonts
+"Noto Serif JP" is lisenced under the SIL Open Font License
+http://scripts.sil.org/OFL
+https://fonts.google.com/(Google)
+"Lora" is lisenced under the SIL Open Font License
+http://scripts.sil.org/OFL
+https://fonts.google.com/(Cyreal)
+"Cinzel" is lisenced under the SIL Open Font License
+http://scripts.sil.org/OFL
+https://fonts.google.com/(Natanael Gama)
+*/
+
+/*
+Font Awesome(Font License)
+"font-awesome" is lisenced under the SIL Open Font License 1.1
+http://scripts.sil.org/OFL
+https://fontawesome.com/v4.7.0/
+*/
+
+/*
+Font Awesome(Code License)
+https://fontawesome.com/v4.7.0/
+Released under the MIT license
+https://fontawesome.com/v4.7.0/license/
+http://opensource.org/licenses/mit-license.php
+*/
+
+
+/*--------------------PCファースト/すべての画面サイズでベースとなるCSS--------------------*/
+
+/*--------------------全体の設定--------------------*/
+
+* {
+    /*paddingとborderを幅と高さに含める*/
+    box-sizing: border-box;
+    /*単語の途中でも必ず改行される*/
+    word-break: break-all;
+    /*フォーム周辺のデザインをリセット*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+html {}
+
+body {
+    font-family: 'Lora', 'Noto Serif JP', serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    text-align: left;
+    background: #394274;
+    /*モバイル端末でのテキストサイズの自動調整対策*/
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/*--------------------主要タグの設定--------------------*/
+
+/*フロート解除*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*リンク*/
+a {
+    color: #ffffff;
+    transition: 0.2s;
+    /*アニメーション*/
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/*画像*/
+img {
+    /*フルードイメージ（親要素の幅に応じて縦横比を保持したまま自動的に画像の拡大縮小をする）*/
+    max-width: 100%;
+    height: auto;
+    /*ディセンダー対策（画像の下の隙間を無くす）*/
+    vertical-align: bottom;
+}
+
+a img {
+    /*画像リンクの枠線を消す*/
+    border: 0;
+}
+
+/*段落*/
+p {}
+
+/*ulリスト共通*/
+ul {
+    /*リストマークを非表示*/
+    list-style-type: none;
+    /*リストマークを内側に表示*/
+    list-style-position: inside;
+}
+
+/*--------------------テキスト関連の設定--------------------*/
+/*フォントの種類 太さ*/
+header h1 {
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+}
+
+/*テキスト 行の高さ*/
+header h1,
+.sub,
+nav,
+nav ul li {
+    line-height: 1;
+}
+
+/*テキスト 文字間隔*/
+header h1 {
+    letter-spacing: 0.3em;
+}
+
+header h1 span {
+    /*タイトルの最後の文字の間隔を調整*/
+    letter-spacing: 0;
+}
+
+.sub {
+    letter-spacing: 0.2em;
+}
+
+/*--------------------構造関連の設定--------------------*/
+
+/*コンテナ*/
+.container1 {
+    padding: 0 40px 40px;
+    /*背景画像を中央からずらして配置*/
+    background: url(bg01.jpg) calc(50% - 100px) top no-repeat;
+    background-attachment: fixed;
+}
+
+.container2 {
+    margin: 0 auto;
+    width: 750px;
+}
+
+.container3 {
+    padding: 80px 0 0 150px;
+}
+
+/*ヘッダー*/
+header {
+    text-align: right;
+}
+
+.title {
+    text-align: center;
+    border: 1px solid white;
+    padding: 60px 40px;
+    display: inline-block;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+.sub {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*メイン*/
+main {
+    margin-top: 80px;
+    text-align: left;
+}
+
+/*ナビ*/
+nav {
+    font-size: 24px;
+}
+
+nav ul {}
+
+nav ul li {
+    border-bottom: 1px solid white;
+    height: 60px;
+    line-height: 60px;
+    /*フレックスボックス*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.category {}
+
+.story {}
+
+/*フッター*/
+footer {
+    margin-top: 60px;
+    text-align: right;
+}
+
+footer ul {}
+
+footer ul li {
+    display: inline;
+    margin-right: 0.8em;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li span {
+    margin-right: 0.5em;
+}
+
+
+/*------------画面サイズ900px以下用------------*/
+
+@media screen and (max-width:900px) {
+
+    .container1 {
+        padding: 0 40px 40px;
+        background: url(bg01.jpg) top center no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    .container3 {
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        /*背景画像の高さと同じ値を指定*/
+        height: 466px;
+        text-align: center;
+        /*フレックスボックス（タイトルの上下左右中央配置）*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+}
+
+/*------------画面サイズ700px以下用------------*/
+@media screen and (max-width:700px) {
+    .container1 {
+        padding: 0 15px 40px;
+    }
+
+    .title {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .sub {
+        font-size: 16px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+}
+
+/*ベンダープレフィックス設定済*/
+/*エラーチェック済*/

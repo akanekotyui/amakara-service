@@ -1,0 +1,118 @@
+<!--テンプレート情報-->
+<!--template　Maison de R-->
+<!--url　https://maisonder.web.fc2.com/-->
+<!--title　LUNA-->
+<!--code　HTML5-->
+<!DOCTYPE html>
+<!--言語コード-->
+<html lang="ja">
+
+<head>
+    <!--文字コード-->
+    <meta charset="utf-8">
+    <!--検索（無効）-->
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <!--レスポンシブ-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <!--Font Awesome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--スムーズスクロール-->
+    <script>
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <!--タイトル-->
+    <title>LUNA</title>
+
+</head>
+
+<!--ページ全体-->
+
+<body id="all">
+
+    <!--コンテナ1-->
+    <div class="container1">
+        <!--コンテナ2-->
+        <div class="container2">
+            <!--コンテナ3-->
+            <div class="container3">
+
+                <!--ヘッダー-->
+                <header>
+                    <!--タイトル-->
+                    <div class="title">
+                        <!--小説のタイトル-->
+                        <h1>LUN<span>A</span></h1>
+                        <p class="sub">Fairy tale of the moon</p>
+                    </div>
+                    <!--タイトル-->
+                </header>
+                <!--ヘッダー-->
+
+                <!--メイン-->
+                <main>
+                    <!--ナビ-->
+                    <nav>
+                        <ul>
+                            <li><span class="category">Fantasy</span><span class="story"><a
+                                        href="story.html">新月</a></span></li>
+                            <li><span class="category">Romance</span><span class="story"><a
+                                        href="story.html">二日月</a></span></li>
+                            <li><span class="category">Adventure</span><span class="story"><a
+                                        href="story.html">三日月</a></span></li>
+                            <li><span class="category">SF</span><span class="story"><a href="story.html">上弦の月</a></span>
+                            </li>
+                            <li><span class="category">Romance</span><span class="story"><a
+                                        href="story.html">十三夜月</a></span></li>
+                            <li><span class="category">Fantasy</span><span class="story"><a
+                                        href="story.html">小望月</a></span></li>
+                            <li><span class="category">Mystery</span><span class="story"><a
+                                        href="story.html">満月</a></span></li>
+                            <li><span class="category">History</span><span class="story"><a
+                                        href="story.html">十六夜月</a></span></li>
+                            <li><span class="category">SF</span><span class="story"><a href="story.html">立待月</a></span>
+                            </li>
+                            <li><span class="category">Romance</span><span class="story"><a
+                                        href="story.html">下弦の月</a></span></li>
+                        </ul>
+                    </nav>
+                    <!--ナビ-->
+                </main>
+                <!--メイン-->
+
+                <!--フッター-->
+                <footer>
+                    <ul>
+                        <li><span>TEMPLATE</span><a href="https://maisonder.web.fc2.com/" target="_blank">Maison de
+                                R</a></li>
+                    </ul>
+                </footer>
+                <!--フッター-->
+
+            </div>
+            <!--コンテナ3-->
+        </div>
+        <!--コンテナ2-->
+    </div>
+    <!--コンテナ1-->
+</body>
+<!--ページ全体-->
+
+</html>
+<!--エラーチェック済-->
